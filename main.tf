@@ -15,10 +15,10 @@ provider "aws" {
 
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  name = "mohan-single-instance"
-  ami = "ami-083b3f53cbda7e5a4"
-  instance_type = "t3.micro"
-  subnet_id     = "subnet-0b5e66c13b3b46f86"
+  name = "pkp-single-instance"
+  ami = "ami-07fb0a5bf9ae299a4"
+  instance_type = "t3.small"
+  subnet_id     = "subnet-02abb8cc3c6dae053"
   monitoring    = true
 
   tags = {
