@@ -1,9 +1,9 @@
  terraform {
     backend "s3" {
-        bucket = "mohanraj-terraform-states"
+        bucket = "prasant-aws-s3"
         key    = "terraform/state/terraform.tfstate"
         use_lockfile = "true"
-        region = "ap-south-1"
+        region = "eu-north-1"
     }
    
  }
